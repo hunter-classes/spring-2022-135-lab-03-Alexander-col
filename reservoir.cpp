@@ -1,8 +1,7 @@
-// add your co#include <iostream>
+#include <iostream>
 #include <fstream>
 #include <cstdlib>
 #include <climits>
-
 
 
 float get_east_storage(std::string fetch)
