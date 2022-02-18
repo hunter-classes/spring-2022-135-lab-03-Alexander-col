@@ -37,12 +37,20 @@ float get_east_storage(std::string fetch)
         {
             return eastSt;
         }
-        std::cout << date << " " << eastSt << std::endl;
+        // std::cout << date << " " << eastSt << std::endl;
     }
 
 }
 
+double get_min_east()
+{
+  
+}
 
+double get_max_east()
+{
+  
+}
 int main()
 {
     std::cout << get_east_storage("01/10/2018") << std::endl;
