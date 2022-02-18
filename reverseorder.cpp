@@ -2,13 +2,13 @@
 #include <fstream>
 #include <cstdlib>
 #include <climits>
-#include "reservoir.h"
+#include "reverseorder.h"
 void reverse_order(std::string date1, std::string date2)
 {
   std::istream fin("Current_Reservoir_Levels.tsv");
   double data [365];
   std::stringdates[365];
-  int count = 0;
+  int counter = 0;
   bool c = false;
   if (fin.fail())
   {
@@ -39,7 +39,7 @@ void reverse_order(std::string date1, std::string date2)
             c = false;
           }
           fin.close();
-          for (int i = counter - 1; i > -1, i--){
+          for (int i = counter - 1; i > -1, i--);{
             std::cout << dates[i] << " " << data[i] << " ft" << std::endl;
             }
           }
