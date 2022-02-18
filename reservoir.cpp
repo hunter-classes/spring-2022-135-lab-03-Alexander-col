@@ -4,7 +4,7 @@
 #include <climits>
 #include "reservoir.h"
 
-float get_east_storage(std::string fetch)
+double get_east_storage(std::string fetch)
 {
             std::ifstream fin("Current_Reservoir_Levels.tsv");
 
@@ -174,10 +174,10 @@ std::string compare_basins(std::string fetch)
 
 
 
-int main()
-{
-    std::cout << get_east_storage("01/10/2018") << std::endl;
-    std::cout << get_min_east() << std::endl;
-    std::cout << get_max_east() << std::endl;
-    std::cout << compare_basins("01/10/2018") << std::endl;
-}
+// int main()
+// {
+//     std::cout << get_east_storage("01/10/2018") << std::endl;
+//     std::cout << get_min_east() << std::endl;
+//     std::cout << get_max_east() << std::endl;
+//     std::cout << compare_basins("01/10/2018") << std::endl;
+// }
