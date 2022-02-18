@@ -2,7 +2,7 @@
 #include <fstream>
 #include <cstdlib>
 #include <climits>
-
+#include "reservoir.h"
 
 float get_east_storage(std::string fetch)
 {
