@@ -141,6 +141,8 @@ std::string compare_basins(std::string fetch)
     double eastEl;
     double westSt;
     double westEl;
+    double east;
+    double west;
     //fin >> will score data within your variables
     //order them due to its respected data tyoe
     while(fin >> date >> eastSt >> eastEl >> westSt >> westEl) { 
@@ -151,15 +153,26 @@ std::string compare_basins(std::string fetch)
         fin.ignore(INT_MAX, '\n'); //skips to the end of line, 
         //ignorring the remaining columns 
         // for example, to print the date and East basin storage:
-        
-        if (fetch == date)
-        {
-            return eastSt;
-        }
+      if (fetch == date)
+    {
+      east = eastSt;
+      west = westSt;
+      if (east > west){
+        return "East";
+      }if (west > east){
+        return "West";
+      }if (west == east){
+        return "Equal";
+      }
+      }
+
+    }
         // std::cout << date << " " << eastSt << std::endl;
     }
 
-}
+
+
+
 
 int main()
 {
